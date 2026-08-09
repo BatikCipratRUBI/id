@@ -250,18 +250,18 @@
             header h1 { font-size: 1.3rem; white-space: nowrap; margin-top: 0; }
             .hamburger { font-size: 0.9rem; padding: 5px 8px; }
             
-            /* --- PERBAIKAN BANNER HERO HP AGAR GAMBAR TIDAK KEPOTONG --- */
+            /* --- KEMBALIKAN BANNER KE MODE PENUH (COVER) DENGAN BAYANGAN LEBIH GELAP --- */
             .hero {
                 height: auto; 
                 min-height: 400px; 
-                padding: 40px 15px; 
-                background-size: contain; /* Memaksa seluruh gambar tampil utuh */
-                background-position: top center; /* Menempelkan gambar di atas */
-                background-repeat: no-repeat; /* Mencegah gambar berulang */
-                justify-content: flex-end; /* Mendorong teks ke bawah gambar */
+                padding: 50px 20px; 
+                background-size: cover; 
+                background-position: center; 
+                /* Bayangan digelapkan (0.85) agar tulisan putih sangat jelas terbaca */
+                background-image: linear-gradient(rgba(93, 64, 55, 0.85), rgba(93, 64, 55, 0.85)), url('Style/banner.png');
             }
-            .hero h2 { font-size: 2.2rem; margin-bottom: 10px; margin-top: 30px; } 
-            .hero p { font-size: 1rem; } 
+            .hero h2 { font-size: 2.4rem; margin-bottom: 10px; margin-top: 0; } 
+            .hero p { font-size: 1.05rem; } 
 
             /* --- BAWAAN SEBELUMNYA --- */
             .product-grid { grid-template-columns: 1fr; gap: 20px; }
@@ -686,7 +686,7 @@
             <span style="font-family: 'Lora', serif;">Dukung kami di:</span>
             
             <!-- Instagram -->
-            <a href="https://www.instagram.com/akun_desa_atau_kkn/" target="_blank" title="Instagram">
+            <a href="https://www.instagram.com/rubi_rumahbatikinklusi?igsh=MWFiMnNlMzZndnc3aA==" target="_blank" title="Instagram">
                  <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.012 3.584-.07 4.85c-.148 3.252-1.691 4.771-4.919 4.919-1.265.058-1.645.069-4.85.069s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.012-3.584.07-4.85c.148-3.252 1.691-4.771 4.919-4.919 1.265-.058 1.645-.069 4.85-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.79-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                  </svg>
