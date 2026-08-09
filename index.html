@@ -239,21 +239,30 @@
         .social-icon { width: 22px; height: 22px; fill: white; transition: 0.3s; }
         .social-icon:hover { transform: scale(1.2); fill: var(--accent-color); }
         
-        /* Responsif (Tampilan untuk HP) */
+        /* ========================================================= */
+        /* Responsif (Tampilan untuk HP)                             */
+        /* ========================================================= */
         @media (max-width: 600px) {
-            /* --- PERBAIKAN KHUSUS HEADER HP (AGAR SEJAJAR & TIDAK NGEZOOM) --- */
+            /* --- PERBAIKAN KHUSUS HEADER HP --- */
             header { padding: 10px 10px; }
             .header-left { gap: 8px; }
             .logo-icon { transform: scale(1.1); width: 35px; height: 35px; margin-left: 5px; }
             header h1 { font-size: 1.3rem; white-space: nowrap; margin-top: 0; }
             .hamburger { font-size: 0.9rem; padding: 5px 8px; }
             
+            /* --- PERBAIKAN BANNER HERO HP AGAR TIDAK KEPOTONG --- */
+            .hero {
+                height: auto; /* Membiarkan tinggi menyesuaikan otomatis */
+                min-height: 350px; /* Minimal tinggi agar tetap terlihat gagah */
+                padding: 50px 20px; /* Menambah bantalan atas-bawah agar teks bernapas */
+            }
+            .hero h2 { font-size: 2.4rem; margin-bottom: 10px; } /* Judul sedikit disesuaikan */
+            .hero p { font-size: 1.05rem; } /* Paragraf lebih pas di layar kecil */
+
             /* --- BAWAAN SEBELUMNYA --- */
             .product-grid { grid-template-columns: 1fr; gap: 20px; }
             .product-image { height: 380px; }
             .qty-container { top: 320px; }
-            .hero h2 { font-size: 2.8rem; } 
-            .hero p { font-size: 1.1rem; }
             .section-title { font-size: 2.8rem; }
             .category-title { font-size: 2rem; }
             footer h3 { font-size: 1.6rem; }
