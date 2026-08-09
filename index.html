@@ -250,14 +250,18 @@
             header h1 { font-size: 1.3rem; white-space: nowrap; margin-top: 0; }
             .hamburger { font-size: 0.9rem; padding: 5px 8px; }
             
-            /* --- PERBAIKAN BANNER HERO HP AGAR TIDAK KEPOTONG --- */
+            /* --- PERBAIKAN BANNER HERO HP AGAR GAMBAR TIDAK KEPOTONG --- */
             .hero {
-                height: auto; /* Membiarkan tinggi menyesuaikan otomatis */
-                min-height: 350px; /* Minimal tinggi agar tetap terlihat gagah */
-                padding: 50px 20px; /* Menambah bantalan atas-bawah agar teks bernapas */
+                height: auto; 
+                min-height: 400px; 
+                padding: 40px 15px; 
+                background-size: contain; /* Memaksa seluruh gambar tampil utuh */
+                background-position: top center; /* Menempelkan gambar di atas */
+                background-repeat: no-repeat; /* Mencegah gambar berulang */
+                justify-content: flex-end; /* Mendorong teks ke bawah gambar */
             }
-            .hero h2 { font-size: 2.4rem; margin-bottom: 10px; } /* Judul sedikit disesuaikan */
-            .hero p { font-size: 1.05rem; } /* Paragraf lebih pas di layar kecil */
+            .hero h2 { font-size: 2.2rem; margin-bottom: 10px; margin-top: 30px; } 
+            .hero p { font-size: 1rem; } 
 
             /* --- BAWAAN SEBELUMNYA --- */
             .product-grid { grid-template-columns: 1fr; gap: 20px; }
@@ -689,7 +693,7 @@
             </a>
 
             <!-- TikTok -->
-            <a href="https://www.tiktok.com/@akun_tiktok_anda" target="_blank" title="TikTok">
+            <a href="https://www.tiktok.com/@batik.rubi?_r=1&_t=ZS-98g6Anr9mvI" target="_blank" title="TikTok">
                  <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                      <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/>
                  </svg>
