@@ -241,6 +241,14 @@
         
         /* Responsif (Tampilan untuk HP) */
         @media (max-width: 600px) {
+            /* --- PERBAIKAN KHUSUS HEADER HP (AGAR SEJAJAR & TIDAK NGEZOOM) --- */
+            header { padding: 10px 10px; }
+            .header-left { gap: 8px; }
+            .logo-icon { transform: scale(1.1); width: 35px; height: 35px; margin-left: 5px; }
+            header h1 { font-size: 1.3rem; white-space: nowrap; margin-top: 0; }
+            .hamburger { font-size: 0.9rem; padding: 5px 8px; }
+            
+            /* --- BAWAAN SEBELUMNYA --- */
             .product-grid { grid-template-columns: 1fr; gap: 20px; }
             .product-image { height: 380px; }
             .qty-container { top: 320px; }
