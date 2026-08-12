@@ -38,16 +38,15 @@
         }
         .header-left { display: flex; align-items: center; gap: 15px; }
         
-        /* LOGO ICON */
+        /* LOGO ICON - Ukuran Diperbaiki dan Dibatasi */
         .logo-icon { 
-            width: 50px; 
-            height: 50px; 
+            height: 45px; 
+            width: auto; 
             object-fit: contain; 
             background: transparent; 
             border: none; 
             border-radius: 0; 
-            transform: scale(1.8); 
-            margin-left: 15px; 
+            margin-left: 10px; 
         }
 
         /* Teks Logo dengan Font Latin */
@@ -141,7 +140,7 @@
             color: #666; 
             margin-bottom: 40px; 
         }
-F        
+        
         .category-title { 
             font-family: 'Dancing Script', cursive;
             font-size: 2.5rem; 
@@ -270,7 +269,7 @@ F
             /* --- PERBAIKAN KHUSUS HEADER HP --- */
             header { padding: 10px 10px; }
             .header-left { gap: 8px; }
-            .logo-icon { transform: scale(1.1); width: 35px; height: 35px; margin-left: 5px; }
+            .logo-icon { height: 35px; width: auto; margin-left: 5px; } /* Ukuran proporsional HP */
             header h1 { font-size: 1.3rem; white-space: nowrap; margin-top: 0; }
             .hamburger { font-size: 0.9rem; padding: 5px 8px; }
             
@@ -392,7 +391,7 @@ F
                 <div class="product-info">
                     <div>
                         <h3 class="product-title">Ciprat Lintang Malam</h3>
-                        <p class="product-desc">Percikan dan garis putih melintang di atas warna biru dongker pekat, menyerupai rasi bintang di langit malam.</p>
+                        <p class="product-desc">Percikan putih di atas kanvas gelap menyerupai rasi bintang dan meteor di langit malam. Sangat elegan, misterius, dan berkelas..</p>
                         <p class="product-note">*Harga dapat berubah tergantung jenis kain & tahapan pengerjaan.</p>
                     </div>
                     <div>
@@ -416,7 +415,7 @@ F
                 <div class="product-info">
                     <div>
                         <h3 class="product-title">Ciprat Ungu Anggur</h3>
-                        <p class="product-desc">Warna ungu yang elegan dipadukan dengan cipratan sentral yang menyerupai rimbunnya dedaunan.</p>
+                        <p class="product-desc">Warna ungu tua yang manis dipadukan dengan cipratan sentral putih cerah yang sangat memikat.</p>
                         <p class="product-note">*Harga dapat berubah tergantung jenis kain & tahapan pengerjaan.</p>
                     </div>
                     <div>
@@ -431,7 +430,7 @@ F
             <!-- PRODUK 5 -->
             <div class="product-card">
                 <div class="product-number">5</div>
-                <img src="produk/5.png" alt="Ciprat Pusaran Delima" class="product-image">
+                <img src="produk/5.png" alt="Ciprat Merah Delima" class="product-image">
                 <div class="qty-container">
                     <button class="btn-qty-control" onclick="kurangQty('qty5')">-</button>
                     <input type="text" id="qty5" class="input-qty-display" value="1" readonly>
@@ -439,7 +438,7 @@ F
                 </div>
                 <div class="product-info">
                     <div>
-                        <h3 class="product-title">Ciprat Pusaran Delima</h3>
+                        <h3 class="product-title">Ciprat Merah Delima</h3>
                         <p class="product-desc">Sapuan putih melingkar indah di atas warna merah delima, melambangkan pesona dan karisma yang kuat.</p>
                         <p class="product-note">*Harga dapat berubah tergantung jenis kain & tahapan pengerjaan.</p>
                     </div>
@@ -447,7 +446,7 @@ F
                         <div class="price-box">
                             <span class="price-original">Rp 200.000</span>
                         </div>
-                        <button class="btn-buy" onclick="pesanWA('Ciprat Pusaran Delima', 200000, 'qty5')">Pesan Sekarang</button>
+                        <button class="btn-buy" onclick="pesanWA('Ciprat Merah Delima', 200000, 'qty5')">Pesan Sekarang</button>
                     </div>
                 </div>
             </div>
@@ -541,9 +540,9 @@ F
                     </div>
                     <div>
                         <div class="price-box">
-                            <span class="price-original">Rp 185.000 </span>
+                            <span class="price-original">Rp - </span>
                         </div>
-                        <button class="btn-buy" onclick="pesanWA('Ciprat Hijau Zamrud', 185000, 'qty9')">Pesan Sekarang</button>
+                        <button class="btn-buy" onclick="pesanWA('Ciprat Hijau Zamrud', 0, 'qty9')">Pesan Sekarang</button>
                     </div>
                 </div>
             </div>
@@ -565,9 +564,9 @@ F
                     </div>
                     <div>
                         <div class="price-box">
-                            <span class="price-original">Rp 200.000 </span>
+                            <span class="price-original">Rp - </span>
                         </div>
-                        <button class="btn-buy" onclick="pesanWA('Ciprat Anggrek Malam', 200000, 'qty10')">Pesan Sekarang</button>
+                        <button class="btn-buy" onclick="pesanWA('Ciprat Anggrek Malam', 0, 'qty10')">Pesan Sekarang</button>
                     </div>
                 </div>
             </div>
@@ -575,7 +574,7 @@ F
             <!-- PRODUK 11 -->
             <div class="product-card">
                 <div class="product-number">11</div>
-                <img src="produk/11.png" alt="Ciprat Sekar Merah" class="product-image">
+                <img src="produk/11.png" alt="Ciprat Merah Motif Klasik" class="product-image">
                 <div class="qty-container">
                     <button class="btn-qty-control" onclick="kurangQty('qty11')">-</button>
                     <input type="text" id="qty11" class="input-qty-display" value="1" readonly>
@@ -613,9 +612,9 @@ F
                     </div>
                     <div>
                         <div class="price-box">
-                            <span class="price-original">Rp 250.000</span>
+                            <span class="price-original">Rp -</span>
                         </div>
-                        <button class="btn-buy" onclick="pesanWA('Ciprat Embun Rimba', 250000, 'qty12')">Pesan Sekarang</button>
+                        <button class="btn-buy" onclick="pesanWA('Ciprat Embun Rimba', 0, 'qty12')">Pesan Sekarang</button>
                     </div>
                 </div>
             </div>
@@ -631,7 +630,7 @@ F
                 </div>
                 <div class="product-info">
                     <div>
-                        <h3 class="product-title">Ciprat Akar Bumi</h3>
+                        <h3 class="product-title">Ciprat Gurat Bumi</h3>
                         <p class="product-desc">Garis-garis tegas berwarna coklat tegas di atas kanvas hitam pekat. Sangat elegan dan membumi.</p>
                         <p class="product-note">*Harga dapat berubah tergantung jenis kain & tahapan pengerjaan.</p>
                     </div>
@@ -639,7 +638,7 @@ F
                         <div class="price-box">
                             <span class="price-original">Rp 185.000</span>
                         </div>
-                        <button class="btn-buy" onclick="pesanWA('Ciprat  Bumi', 185000, 'qty13')">Pesan Sekarang</button>
+                        <button class="btn-buy" onclick="pesanWA('Ciprat Gurat Bumi', 185000, 'qty13')">Pesan Sekarang</button>
                     </div>
                 </div>
             </div>
@@ -761,7 +760,7 @@ F
                  </svg>
             </a>
         </div>
-        <p>&copy; 2026 Batik Ciprat RUBI - Desa Kedungdowo.</p>
+        <p>&copy; 2026 Batik Ciprat RUBI - Desa KedungDowo.</p>
     </footer>
 
     <script>
@@ -782,7 +781,7 @@ F
                 input.value = parseInt(input.value) - 1;
             }
         }
-        
+
         /* FUNGSI PESAN WHATSAPP (DIUPDATE UNTUK MENGAKOMODASI HARGA YANG MASIH KOSONG / Rp - ) */
         function pesanWA(namaProduk, hargaSatuan, idQty) {
             let qty = parseInt(document.getElementById(idQty).value);
